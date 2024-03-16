@@ -8,3 +8,11 @@ Content-Type: application/json
 |----------|----------|
 | Content 1| Content 2|
 | Content 3| Content 4|
+
+
+````markdown
+```markdown
+| Tên | Tuổi |
+|-----|------|
+| John| 30   |
+| Jane| 25   |
