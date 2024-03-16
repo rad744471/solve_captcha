@@ -1,6 +1,6 @@
 Host: betacaptcha.com
 
-**Code mẫu được tham khảo phía dưới:**
+Code mẫu được tham khảo phía dưới:
 
 ```markdown
 import time
@@ -18,22 +18,25 @@ json_data = {
 createJob = requests.post("http://betacaptcha.com/api/createJob", json=json_data)
 
 # Lấy kết quả trả về
-time.sleep(2)
-json_data = {
-    "api_token": "YOUR_API_KEY",
-    "taskid": createJob.json()["taskid"]
-}
-response = requests.post("http://betacaptcha.com/api/getJobResult", json=json_data)
+for _ in range(3):
+    json_data = {
+        "api_token": "YOUR_API_KEY",
+        "taskid": createJob.json()["taskid"]
+    }
+    getJobResult = requests.post("http://betacaptcha.com/api/getJobResult", json=json_data)
+    if getJobResult.json()["status"] != "running":
+        result = getJobResult.json()["result"]
+        break
+    else:
+        time.sleep(1)
 
-print(">> Kết quả:", response.json()["result"])
+print(">> Kết quả:", result)
 ```
-
-**Tham số cơ bản:**
 
 | Name | Type | Required | Description |
 |----------|----------|----------|----------|
 | api_token | text | yes | Khóa tài khoản khách hàng |
 | data.type_job | text | yes | Dịch vụ sử dụng (textcaptcha, tiktok_slide, tiktok_click, tiktok_rotate, fun_capcha_click) |
-| data.body | text | yes | Hình ảnh được mã hóa base64 <br> ![data.body](https://github.com/rad744471/solve_captcha/blob/main/image/funcaptcha.jpg?raw=true)|
-| data.imginstructions | text | yes* | Văn bản câu hỏi captcha (Nếu sử dụng fun_capcha_click) <br> ![data.imginstructions](https://github.com/rad744471/solve_captcha/blob/main/image/imginstructions.jpg?raw=true)|
+| data.body | text | yes | Hình ảnh được mã hóa base64 ![data.body](https://github.com/rad744471/solve_captcha/blob/main/image/funcaptcha.jpg?raw=true)|
+| data.imginstructions | text | yes* | Văn bản câu hỏi captcha (Nếu sử dụng fun_capcha_click) ![data.imginstructions](https://github.com/rad744471/solve_captcha/blob/main/image/imginstructions.jpg?raw=true)|
 
