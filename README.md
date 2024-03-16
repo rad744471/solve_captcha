@@ -1,7 +1,5 @@
 Host: betacaptcha.com
 
-Code mẫu được tham khảo phía dưới:
-
 ```markdown
 import time
 import requests
