@@ -1,43 +1,31 @@
 Host: betacaptcha.com
 Content-Type: application/json
 
-
+```markdown
 import time
-import base64
 import requests
 
-
-````markdown
-def image_to_base64(image_path):
-    with open(image_path, "rb") as image_file:
-        return base64.b64encode(image_file.read()).decode('utf-8')
-
+# Tạo Job
 json_data = {
-    "api_token": "23aeb70e1205da8179569a5d250f58bf",
+    "api_token": "YOUR_API_KEY",
     "data": {
         "type_job": "fun_capcha_click",
-        "imginstructions": "Use the arrows to move the train to the coordinates indicated in the left image (1 of 10)",
-        "body": image_to_base64('image\\image (1).jpg')
+        "body": "image as base64 encoded",
+        "imginstructions": "Use the arrows to move the train to the coordinates indicated in the left image"
     }
 }
+createJob = requests.post("http://betacaptcha.com/api/createJob", json=json_data)
 
-current_time = time.time()
+# Lấy kết quả trả về
+time.sleep(2)
+json_data = {
+    "api_token": "YOUR_API_KEY",
+    "taskid": createJob.json()["taskid"]
+}
+response = requests.post("http://betacaptcha.com/api/getJobResult", json=json_data)
 
-createJob = requests.post("http://127.0.0.1/api/createJob", json=json_data)
-print(createJob.json())
-
-while True:
-    json_data = {
-        "api_token": "23aeb70e1205da8179569a5d250f58bf",
-        "taskid": createJob.json()["taskid"]
-    }
-    response = requests.post("http://127.0.0.1/api/getJobResult", json=json_data)
-    if response.json()["status"] != "running":
-        print(time.time() - current_time, response.json())
-        break
-    else:
-        time.sleep(1)
-````markdown
+print(">> Kết quả:", response.json()["result"])
+```
 
 - api_token: Khóa API lấy tại trang chủ chúng tôi
 
