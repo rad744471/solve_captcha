@@ -1,6 +1,6 @@
 Host: betacaptcha.com
 
-Code mẫu được tham khảo phía dưới:
+**Code mẫu được tham khảo phía dưới:**
 
 ```markdown
 import time
@@ -27,6 +27,8 @@ response = requests.post("http://betacaptcha.com/api/getJobResult", json=json_da
 
 print(">> Kết quả:", response.json()["result"])
 ```
+
+**Tham số cơ bản:**
 
 | Name | Type | Required | Description |
 |----------|----------|----------|----------|
