@@ -28,8 +28,7 @@ response = requests.post("http://betacaptcha.com/api/getJobResult", json=json_da
 print(">> Kết quả:", response.json()["result"])
 ```
 
-| Header 1 | Header 2 |
-|----------|----------|
-| Content 1| Content 2|
-| Content 3| Content 4|
-
+| Name | Type | Required | Description |
+|----------|----------|----------|----------|
+| api_token | text | yes | Khóa tài khoản khách hàng |
+| data.type_job | text | yes | Dịch vụ (textcaptcha, tiktok_slide, tiktok_click, tiktok_rotate, fun_capcha_click) |
