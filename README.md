@@ -35,3 +35,5 @@ print(">> Kết quả:", response.json()["result"])
 | data.body | text | yes | Hình ảnh được mã hóa base64 |
 | data.imginstructions | text | yes* | Văn bản câu hỏi captcha (Nếu sử dụng fun_capcha_click) |
 
+![Logo của GitHub](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
+
