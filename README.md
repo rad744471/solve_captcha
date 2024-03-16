@@ -37,6 +37,6 @@ print(">> Kết quả:", result)
 |----------|----------|----------|----------|
 | api_token | text | yes | Khóa tài khoản khách hàng |
 | data.type_job | text | yes | Dịch vụ sử dụng (textcaptcha, tiktok_slide, tiktok_click, tiktok_rotate, fun_capcha_click) |
-| data.body | text | yes | Hình ảnh được mã hóa base64 ![data.body](https://github.com/rad744471/solve_captcha/blob/main/image/funcaptcha.jpg?raw=true)|
+| data.body | text | yes | Hình ảnh được mã hóa base64 <span class="text-red-500">(không phải ảnh chụp màn hình)</span> ![data.body](https://github.com/rad744471/solve_captcha/blob/main/image/funcaptcha.jpg?raw=true)|
 | data.imginstructions | text | yes* | Văn bản câu hỏi captcha (Nếu sử dụng fun_capcha_click) ![data.imginstructions](https://github.com/rad744471/solve_captcha/blob/main/image/imginstructions.jpg?raw=true)|
 
