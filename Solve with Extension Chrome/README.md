@@ -1,18 +1,14 @@
-Để áp dụng mã API KEY mặc định khi extension được khởi động, cấu hình khóa API KEY trong file `./config.json`.
-## Làm cách nào để có thể?
 
-<h2>How to disable opening the extension page after installation?</h2>
+## Làm cách nào để có thể sử dụng extension với key mặc định?
+Để áp dụng mã API KEY mặc định khi extension được khởi động, cấu hình khóa API KEY trong file `./config.json`. Điều này sẽ giúp các coder xử lý trong nền tảng selenium tốt hơn.
 
-<p>To do this, in the file <code>./manifest.json</code>, delete the following lines:</p>
+<p>Hãy điều chỉnh "YOUR API KEY" trong file <code>./config.json</code>, thay thế bằng khóa API bạn lấy trên website: https://betacaptcha.com/</p>
 
 <pre><code class="json">
-"options_ui": {
-    "page": "options/options.html",
-    "open_in_tab": true
-},
+{
+    "API_KEY": "YOUR API KEY"
+}
 </code></pre>
-
-
 
 
 Chỉnh sửa file `./common/config.js` để cấu hình cài đặt.
