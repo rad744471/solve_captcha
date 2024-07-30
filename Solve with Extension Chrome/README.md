@@ -2,13 +2,17 @@
 ## Giá trị :
 ## How to disable opening the extension page after installation?
 
-To do this, in the file `./manifest.json`, delete the following lines:
+<h2>How to disable opening the extension page after installation?</h2>
 
-```json
+<p>To do this, in the file <code>./manifest.json</code>, delete the following lines:</p>
+
+<pre><code class="json">
 "options_ui": {
     "page": "options/options.html",
     "open_in_tab": true
-},```
+},
+</code></pre>
+
 
 
 
