@@ -1,4 +1,17 @@
-check
+Để áp dụng mã API KEY mặc định khi extension được khởi động, cấu hình khóa API KEY trong file `./config.json`.
+## Giá trị :
+## How to disable opening the extension page after installation?
+
+To do this, in the file `./manifest.json`, delete the following lines:
+
+```json
+"options_ui": {
+    "page": "options/options.html",
+    "open_in_tab": true
+},
+
+
+
 Chỉnh sửa file `./common/config.js` để cấu hình cài đặt.
 ## Description of the values of the data-state attribute:
 
