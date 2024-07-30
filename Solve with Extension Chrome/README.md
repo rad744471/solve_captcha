@@ -1,6 +1,5 @@
 Để áp dụng mã API KEY mặc định khi extension được khởi động, cấu hình khóa API KEY trong file `./config.json`.
-## Giá trị :
-## How to disable opening the extension page after installation?
+## Làm cách nào để có thể?
 
 <h2>How to disable opening the extension page after installation?</h2>
 
