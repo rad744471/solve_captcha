@@ -8,7 +8,7 @@ To do this, in the file `./manifest.json`, delete the following lines:
 "options_ui": {
     "page": "options/options.html",
     "open_in_tab": true
-},
+},```
 
 
 
