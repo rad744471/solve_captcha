@@ -1,7 +1,7 @@
 ## Xem tài liệu hướng dẫn sử dụng API trên:
 [Tài liệu API Beta Captcha](https://github.com/rad744471/solve_captcha/tree/main)
 
-[Tải xuống file.zip Extension Chrome giải Funcaptcha & Recaptcha](https://drive.google.com/file/d/10M7U0X_jdr_AXxhYSqQpHBSmZCOLDaWy/view?usp=sharing)
+[Tải xuống file.zip Extension Chrome giải Funcaptcha & Recaptcha](https://drive.google.com/file/d/1xUtqykXha2VXBzkti2GHBH1tx5m3i6oz/view?usp=sharing)
 
 ## Làm cách nào để có thể sử dụng extension với key mặc định?
 Để áp dụng mã API KEY mặc định khi extension được khởi động, cấu hình khóa API KEY trong file `./config.json`. Điều này sẽ giúp các coder xử lý trong nền tảng selenium tốt hơn.
