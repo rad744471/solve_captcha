@@ -3,6 +3,8 @@
 
 [Tải xuống file.zip Extension Chrome giải Funcaptcha & Recaptcha](https://drive.google.com/file/d/1xUtqykXha2VXBzkti2GHBH1tx5m3i6oz/view?usp=sharing)
 
+[Video giới thiệu và sử dụng dịch vụ](https://www.youtube.com/watch?v=tSjsGsD3DZA)
+
 ## Làm cách nào để có thể sử dụng extension với key mặc định?
 Để áp dụng mã API KEY mặc định khi extension được khởi động, cấu hình khóa API KEY trong file `./config.json`. Điều này sẽ giúp các coder xử lý trong nền tảng selenium tốt hơn.
 
