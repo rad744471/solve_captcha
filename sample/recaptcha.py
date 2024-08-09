@@ -5,7 +5,7 @@ import requests
 json_data = {
     "api_token": "YOUR_API_KEY",
     "data": {
-        "type_job": "textcaptcha",
+        "type_job": "recaptcha",
         "sitekey": "được lấy từ site-key",
         "siteurl": "địa chỉ url của website"
     }
