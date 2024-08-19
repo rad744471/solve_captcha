@@ -1,7 +1,7 @@
 ## Xem tài liệu hướng dẫn sử dụng API trên:
 [Tài liệu API Beta Captcha](https://github.com/rad744471/solve_captcha/tree/main)
 
-[Tải xuống file.zip Extension Chrome giải Funcaptcha & Recaptcha](https://drive.google.com/file/d/1wQZ-h_bHsqHg7l2hQH55xPlnyrDNqtDg/view?usp=sharing)
+[Tải xuống file.zip Extension Chrome giải Funcaptcha & Recaptcha](https://drive.google.com/drive/folders/1jqILZxITPNXzJzQX5BDr3ppD8odyBk_y?usp=sharing)
 
 [Video giới thiệu và sử dụng dịch vụ](https://www.youtube.com/watch?v=tSjsGsD3DZA)
 
