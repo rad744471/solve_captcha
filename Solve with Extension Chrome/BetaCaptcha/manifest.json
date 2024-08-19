@@ -1,0 +1,44 @@
+{
+    "manifest_version": 3,
+    "name": "Beta Captcha",
+    "version": "1.0",
+    "permissions": [
+        "tabs",
+        "storage",
+        "cookies",
+        "contextMenus",
+        "activeTab",
+        "declarativeNetRequest",
+        "declarativeNetRequestFeedback",
+        "scripting"
+    ],
+    "background": {
+        "service_worker": "js/background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["js/take screen.js", "js/content.js"],
+            "all_frames": true
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": ["config.json"],
+            "matches": ["<all_urls>"]
+        }
+    ],
+    "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self'"
+    },
+    "icons": {
+        "16": "icon/logo.png",
+        "48": "icon/logo.png",
+        "128": "icon/logo.png"
+    },
+    "action": {
+        "default_icon": "icon/logo.png",
+        "default_popup": "popup.html",
+        "default_title": "Beta Captcha"
+    }
+}
