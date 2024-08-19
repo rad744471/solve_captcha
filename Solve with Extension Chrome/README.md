@@ -5,6 +5,8 @@
 
 [Video giới thiệu và sử dụng dịch vụ](https://www.youtube.com/watch?v=tSjsGsD3DZA)
 
+[Video hướng dẫn giải Recaptcha hình ảnh bằng Extension Chrome](https://www.youtube.com/watch?v=K5wV2kpPxlg)
+
 ## Làm cách nào để có thể sử dụng extension với key mặc định?
 Để áp dụng mã API KEY mặc định khi extension được khởi động, cấu hình khóa API KEY trong file `./config.json`. Điều này sẽ giúp các coder xử lý trong nền tảng selenium tốt hơn.
 
