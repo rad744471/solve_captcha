@@ -14,6 +14,7 @@ import requests
 # Tạo Job
 json_data = {
     "api_token": "YOUR_API_KEY",
+    "affiliateid": "YOUR_Affiliate_ID",
     "data": {
         "type_job": "id dịch vụ",
         "body": "image as base64 encoded",
@@ -41,6 +42,7 @@ print(">> Kết quả:", result)
 | Name | Type | Required | Description |
 |----------|----------|----------|----------|
 | api_token | text | yes | Khóa tài khoản khách hàng |
+| affiliateid | text | no | Giới thiệu liên kết |
 | data.type_job | text | yes | Dịch vụ sử dụng (textcaptcha, tiktok_slide, tiktok_click, tiktok_rotate, fun_capcha_click) |
 | data.body | text | yes | Hình ảnh được mã hóa base64 (không phải ảnh chụp màn hình) ![data.body](https://github.com/rad744471/solve_captcha/blob/main/image/funcaptcha.jpg?raw=true)|
 | data.imginstructions | text | yes* | Văn bản câu hỏi captcha (Nếu sử dụng fun_capcha_click) ![data.imginstructions](https://github.com/rad744471/solve_captcha/blob/main/image/imginstructions.jpg?raw=true)|
