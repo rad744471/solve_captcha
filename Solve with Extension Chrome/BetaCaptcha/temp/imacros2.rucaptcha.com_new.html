@@ -1,0 +1,36 @@
+<html>
+<head>
+</head>
+<form method="post" action="getcapcha.php" enctype="multipart/form-data">
+key:<input type="text" size="64" name="key" value="">
+<input type="file" name="file" size="20">
+<input type="hidden" name="method" value="post">
+<input type="hidden" name="imacros" value="true">
+<input type="submit" value="recognize">
+<br>
+<div id="status"></div>
+
+<br><br><br><br><br>
+<b>Additional fields:</b><br>
+<input type="checkbox" name="get_id" value="1">&nbsp;&nbsp;Get id captcha<br>
+<input type="checkbox" name="phrase" value="1">&nbsp;&nbsp;2 words<br>
+<input type="checkbox" name="regsense" value="1">&nbsp;&nbsp;cAse sensitive<br>
+<input type="checkbox" name="calc" value="1">&nbsp;&nbsp;mathematical operation<br>
+<input type="text" name="min_len" value="0" size="5">&nbsp;&nbsp;minimum length<br>
+<input type="text" name="max_len" value="0" size="5">&nbsp;&nbsp;maximum length<br>
+<input type="text" name="language" value="0" size="5">&nbsp;&nbsp;1 - russian 2 - english<br>
+<input type="text" name="numeric" value="0" size="5">&nbsp;&nbsp;1 - only numerals 2 - only letters 3 - either numeric or letters<br>
+<input type="text" size="5" name="soft_id" value="">&nbsp;&nbsp;soft_id<br>
+<input type="text" name="CapMonsterModule" value="" size="15">&nbsp;&nbsp;capmonster module<br>
+<input type="text" name="Task" value="" size="15">&nbsp;&nbsp;task<br>
+<br><br>
+<b>Add additional flags in your code:</b><br>
+<i>
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ACTION:http://{-URL-}/in.php ATTR=NAME:regsense CONTENT=1
+</i>
+<br><br>for min_len / max_len:<br><br>
+<i>
+TAG POS=1 TYPE=INPUT:TEXT FORM=ACTION:http://{-URL-}/in.php ATTR=NAME:max_len CONTENT=15
+</i>
+</form>
+</html>
