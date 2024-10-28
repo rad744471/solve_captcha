@@ -1,7 +1,0 @@
-{
-    "API_KEY": "",
-    "funcaptcha_image": true,
-    "recaptcha_image": true,
-    "recaptcha_token": false,
-    "delay_solve": 2000
-}
