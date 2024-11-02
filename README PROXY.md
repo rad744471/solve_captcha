@@ -2,7 +2,7 @@
 
 `GET /api/getproxy?api_key={API_KEY}`
 
-### Lấy IP mới
+### Lấy IP mới (GET)
 
 ```
 https://betacaptcha.com/api/getproxy?api_key={API_KEY}
