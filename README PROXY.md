@@ -1,11 +1,11 @@
 ## Hướng dẫn sử dụng api IPv4 xoay
 
-`GET /api/getproxy?api_key={API_KEY}`
+`GET /api/change_proxy?api_key={API_KEY}`
 
 ### Lấy IP mới (GET)
 
 ```
-https://betacaptcha.com/api/getproxy?api_key={API_KEY}
+https://betacaptcha.com/api/change_proxy?api_key={API_KEY}
 ```
 - **{API_KEY}**: Thay thế bằng API key của bạn.
 
