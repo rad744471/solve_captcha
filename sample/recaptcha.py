@@ -10,7 +10,7 @@ json_data = {
         "siteurl": "địa chỉ url của website"
     }
 }
-createJob = requests.post("https://betacaptcha.com/api/createJob", json=json_data, verify=False)
+createJob = requests.post("https://betacaptcha.com/api/createJob", json=json_data)
 
 # Lấy kết quả trả về
 for _ in range(3):
@@ -18,7 +18,7 @@ for _ in range(3):
         "api_token": "YOUR_API_KEY",
         "taskid": createJob.json()["taskid"]
     }
-    getJobResult = requests.post("https://betacaptcha.com/api/getJobResult", json=json_data, verify=False)
+    getJobResult = requests.post("https://betacaptcha.com/api/getJobResult", json=json_data)
     if getJobResult.json()["status"] != "running":
         result = getJobResult.json()["result"]
         break
