@@ -17,14 +17,18 @@ Funcaptcha được hoạt động tốt nhất nếu trình duyệt được s�
 <pre><code class="json">
 {
     "API_KEY": "YOUR API_KEY",
-    "Recaptcha_Image": true,
+    "funcaptcha_image": true,
+    "recaptcha_image": true,
+    "recaptcha_token": false,
     "delay_solve": 2000
 }
 </code></pre>
 | Giá trị           | Mô tả                                                                 |
 |---------------------|-----------------------------------------------------------------------------|
 | `API_KEY`  | Giá trị API lấy tại [Trang chủ](https://betacaptcha.com). |
-| `Recaptcha_Image` | để `true` để giải captcha bằng hình ảnh, `false` để giải bằng token. |
+| `funcaptcha_image` | để `true` để giải captcha bằng hình ảnh, `false` để không giải. |
+| `recaptcha_image` | để `true` để giải captcha bằng hình ảnh, `false` để giải bằng token. |
+| `recaptcha_token` | để `true` để giải captcha bằng token, `false` để giải bằng hình ảnh. |
 | `delay_solve`  | thời gian delay giữa 2 lần kiểm tra |
 
 
