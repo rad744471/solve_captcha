@@ -5,7 +5,7 @@
 ### Lấy IP mới (GET)
 
 ```
-https://betacaptcha.com/api/change_proxy?api_key={API_KEY}
+https://www.betacaptcha.com/api/change_proxy?api_key={API_KEY}
 ```
 - **{API_KEY}**: Thay thế bằng API key của bạn.
 
@@ -37,6 +37,12 @@ API trả về một trong hai phản hồi dưới dạng JSON.
     "proxy": null,
     "success": true,
     "timeout": 90
+}
+```
+```json
+{
+    "success": false,
+    "description": "Please slow down your requests or your account will be locked."
 }
 ```
 - **current_IP**: Địa chỉ IP hiện tại mà bạn đang sử dụng.
